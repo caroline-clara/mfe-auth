@@ -8,6 +8,7 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview --port 3002",
     "build-only": "vite build",
+    "start-mfe": "pnpm run build-only && npm run preview",
     "type-check": "vue-tsc --build",
     "lint": "eslint . --fix",
     "format": "prettier --write src/"
